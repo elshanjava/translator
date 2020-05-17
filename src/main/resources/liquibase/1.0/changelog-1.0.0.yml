@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: create table translation_entity
+      author: Mahmudov Elshan
+      changes:
+        - createTable:
+            tableName: translation_entity
+            columns:
+              - column:
+                  autoIncrement: true
+                  name: id
+                  type: bigint
+              - column:
+                  name: text
+                  type: varchar(255)
+              - column:
+                  name: translate_from
+                  type: varchar(255)
+              - column:
+                  name: translate_to
+                  type: varchar(255)
+              - column:
+                  name: result
+                  type: varchar(255)
